@@ -3,7 +3,7 @@ import CampaignManager from './build/CampaignManager.json';
 
 const instance = new web3.eth.Contract(
   JSON.parse(CampaignManager.interface),
-  '0x9ece79fF153C4fdB1F1235907528970c2Bdc7582'
+  '0xf19db4b52Dc12a77f7db7C11DF327E550fEeA7fc'
 );
 
 export default instance;
