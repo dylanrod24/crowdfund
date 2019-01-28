@@ -102,4 +102,9 @@ describe('campaigns', () => {
     balance = parseFloat(balance);
     assert(balance > 104)
   });
+
+  it('gets summary about campaign', async () => {
+    const summary = await campaign.methods.getSummary().call();
+    assert.equal(1, summary[3]);
+  });
 });
